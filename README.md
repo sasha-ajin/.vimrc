@@ -10,7 +10,7 @@ Open vim settings
 vim ~/.vimrc
 ```
 
-Put this code inside
+Put this code inside \
 Go to vim 
 
 ```
