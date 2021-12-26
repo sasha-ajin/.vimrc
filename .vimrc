@@ -49,26 +49,19 @@ filetype plugin indent on    " required
 
 
 
-" Настройки табов для Python, согласно рекоммендациям
 set tabstop=4 
 set shiftwidth=4
 set smarttab
-set expandtab "Ставим табы пробелами
-set softtabstop=4 "4 пробела в табе
-" Автоотступ
+set expandtab 
+set softtabstop=4 
 set autoindent
-" Подсвечиваем все что можно подсвечивать
 let python_highlight_all = 1
-" Включаем 256 цветов в терминале, мы ведь работаем из иксов?
-" Нужно во многих терминалах, например в gnome-terminal
 set t_Co=256
 
-" Перед сохранением вырезаем пробелы на концах (только в .py файлах)
 autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
-" В .py файлах включаем умные отступы после ключевых слов
 autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
 
-syntax on "Включить подсветку синтаксиса
+syntax on 
 
 " set nu "Включаем нумерацию строк
 set mousehide "Спрятать курсор мыши когда набираем текст
