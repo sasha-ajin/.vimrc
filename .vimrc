@@ -63,25 +63,20 @@ autocmd BufRead *.py set smartindent cinwords=if,elif,else,for,while,try,except,
 
 syntax on 
 
-" set nu "Включаем нумерацию строк
-set mousehide "Спрятать курсор мыши когда набираем текст
-set mouse=a "Включить поддержку мыши
-set termencoding=utf-8 "Кодировка терминала
-set novisualbell "Не мигать 
-set t_vb= "Не пищать! (Опции 'не портить текст', к сожалению, нету)
-" Удобное поведение backspace
+set nu
+set mousehide 
+set mouse=a 
+set termencoding=utf-8 
+set novisualbell 
 set backspace=indent,eol,start whichwrap+=<,>,[,]
-" Вырубаем черточки на табах
 set showtabline=1
 
-" Переносим на другую строчку, разрываем строки
 set wrap
 set linebreak
 
-" Вырубаем .swp и ~ (резервные) файлы
 set nobackup
 set noswapfile
-set encoding=utf-8 " Кодировка файлов по умолчанию
+set encoding=utf-8 
 set fileencodings=utf8,cp1251
 
 set clipboard=unnamed
@@ -94,10 +89,7 @@ nnoremap <C-P> :bprev<CR>
 " Выключаем звук в Vim
 set visualbell t_vb=
 
-"Переключение табов по CMD+number для MacVim
 if has("gui_macvim")
-  " Press Ctrl-Tab to switch between open tabs (like browser tabs) to 
-  " the right side. Ctrl-Shift-Tab goes the other way.
   noremap <C-Tab> :tabnext<CR>
   noremap <C-S-Tab> :tabprev<CR>
 
