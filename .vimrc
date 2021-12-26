@@ -86,7 +86,6 @@ set hidden
 nnoremap <C-N> :bnext<CR>
 nnoremap <C-P> :bprev<CR>
 
-" Выключаем звук в Vim
 set visualbell t_vb=
 
 if has("gui_macvim")
